@@ -1,0 +1,10 @@
+{
+  "name": "axem-avant-vente",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent avant-vente AXEM (demo de candidature) : RAG sur le contenu public d'AXEM, vrai Claude Haiku, deploye sur Vercel.",
+  "engines": {
+    "node": ">=18"
+  }
+}
