@@ -72,6 +72,6 @@ export const KNOWLEDGE = [
   {
     id: "demo-honnetete",
     title: "À propos de cet assistant",
-    text: "Cet assistant est une démonstration construite par Baba Moustapha Amadou dans le cadre de sa candidature au poste de Chef de projet IA en alternance chez AXEM. Il s'appuie uniquement sur le contenu public du site d'AXEM et sur un vrai modèle Claude (Haiku). Ce n'est pas un service officiel d'AXEM. Il montre un agent avant-vente que Baba sait concevoir, brancher sur une base de connaissances et déployer en production."
+    text: "Cet assistant est une démonstration construite par Baba Moustapha Amadou à partir du contenu public d'AXEM. Il s'appuie uniquement sur ce contenu et sur un vrai modèle Claude (Haiku). Ce n'est pas un service officiel d'AXEM. Il montre un agent avant-vente que Baba sait concevoir, brancher sur une base de connaissances et déployer en production."
   }
 ];
