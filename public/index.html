@@ -115,7 +115,7 @@ footer .fs{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;margin-t
   [].forEach.call(sug.querySelectorAll('button'),function(b,i){b.textContent=SUG[i];b.addEventListener('click',function(){input.value=SUG[i];form.requestSubmit();});});
 
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function linkify(t){return esc(t).replace(/(https?:\/\/[^\s]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');}
+  function linkify(t){return esc(t).replace(/(https?:\/\/[^\s<]+)/g,function(m){var tr='';var mm=m.match(/[.,;:!?)\]]+$/);if(mm){tr=mm[0];m=m.slice(0,m.length-tr.length);}return '<a href="'+m+'" target="_blank" rel="noopener">'+m+'</a>'+tr;});}
   function bubble(role,html,cls){
     var d=document.createElement('div');d.className='msg '+(role==='user'?'u':'a');
     d.innerHTML='<span class="who">'+(role==='user'?'Vous':'AXEM')+'</span><span class="bub '+(cls||'')+'">'+html+'</span>';
